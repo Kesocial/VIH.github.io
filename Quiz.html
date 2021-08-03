@@ -1,0 +1,1449 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles2.css">
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <title>Inicio - VIH</title>
+    <link rel="shortcut icon" href="multimedia/favicons/bacteria.png" />
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+
+<div class="pos-f-t sticky-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand" href="index.html">
+            <img src="multimedia/bacteria.png" width=50px> VIH
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <a class="nav-item nav-link active " href="index.html">Inicio</a>
+                <a class="nav-item nav-link " href="MarcoJuridico.html">Marco Juridico</a>
+                <a class="nav-item nav-link " href="Discriminacion.html">Discriminacion</a>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Derechos de Salud</a>
+                    <div class="dropdown-menu bg-dark">
+                        <a class="dropdown-item text-white" href="DerechosDeSalud1.html">Introduccion</a>
+                        <a class="dropdown-item text-white" href="DerechosDeSalud2.html">Legislación</a>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+
+</div>
+</nav>
+</div>
+
+<body class="bg-dark">
+    <div class="Quiz">
+
+        <div id="TituloMultipleChoise" class="container-title2">
+            <h1 class="text-center title2 text-dark">Quiz - Parte 1
+            </h1>
+            <h2 class="text-center subtitle text-dark">Multiple Choise</h2>
+        </div>
+
+        <div id="TituloRespuestasAbiertas" class="container-title2 display-none ">
+            <h1 class="text-center title2 text-dark">Quiz - Parte 2
+            </h1>
+            <h2 class="text-center subtitle text-dark">Respuestas Abiertas</h2>
+        </div>
+
+        <div id="TituloRespuestasAbiertas" class="container-title2 display-none ">
+            <h1 class="text-center title2 text-dark">Quiz - Parte 3
+            </h1>
+            <h2 class="text-center subtitle text-dark">Verdadero o Falso</h2>
+        </div>
+
+        <div id="pregunta1" class="container">
+            <div class="">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 1</h6>
+                    <h1 class="text-center">Aproximadamente, ¿Cuantas Personas viven con el VIH en el mundo?</h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio">
+                        <input checked class="radio" name="Preg1" id="resp1" type="radio">
+                        <label class="QuizAnuncio text-center  text-white" for="resp1">A - 2.000.000</label>
+                    </div>
+
+                    <div class=" radio">
+                        <input class="radio" name="Preg1" id="resp2" type="radio">
+                        <label class="QuizAnuncio text-center  text-white" for="resp2">B - 12.000.000</label>
+                    </div>
+
+                    <div class=" radio mb-3">
+                        <input class="radio" name="Preg1" id="resp3" type="radio">
+                        <label id="respuesta-correcta1" class="QuizAnuncio  text-center text-white" for="resp3">C - 37.000.000</label>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <button id="enviar1" class="btn btnStyle ">
+                    Enviar 
+                    </button>
+                    <div id="modalExplicacion1" class="container display-none ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btnStyle" data-toggle="modal" data-target="#exampleModalCenter">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Equivalente a la población de Canadá.<br> Esta estimación procede de estadísticas de ONUSIDA. El registro actual se sitúa entre los 31.1 millones - 43.9 millones de personas en el 2017. La información está basada
+                                        en estudios epidemiológicos que incluye: sistemas de vigilancia centrados en las embarazadas que acuden a determinados centros de atención prenatal; estimaciones nacionales de prevalencia del VIH en poblaciones
+                                        mayormente expuestas (trabajadores sexuales, HSH, consumidores de drogas inyectables); y casos comunicados de manera reciente. Esta información se procesa y así es como surgen las estimaciones que se actualizan
+                                        anualmente
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button id="siguiente1" class="btn btnStyle display-none ">
+                    Siguiente 
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="pregunta2" class="container display-none">
+            <div class="">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 2</h6>
+                    <h1 class="text-center">¿Cuántas personas contraen el VIH cada día en el mundo?</h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio resp1_2">
+                        <input checked class="radio" name="Preg2" id="resp1_2" type="radio">
+                        <label class="QuizAnuncio text-center  text-white" for="resp1_2">A - Menos de 500</label>
+                    </div>
+
+                    <div class=" radio resp2_2">
+                        <input class="radio" name="Preg2" id="resp2_2" type="radio">
+                        <label class="QuizAnuncio text-center  text-white" for="resp2_2">B - 1000</label>
+                    </div>
+
+                    <div class=" radio resp3_2">
+                        <input class="radio" name="Preg2" id="resp3_2" type="radio">
+                        <label class="QuizAnuncio text-center text-white" for="resp3_2">C - 3000</label>
+                    </div>
+                    <div class=" radio mb-3 resp4_2 ">
+                        <input class="radio" name="Preg2" id="resp4_2" type="radio">
+                        <label id="respuesta-correcta2" class="QuizAnuncio text-center text-white" for="resp4_2">C - Cerca de 5000</label>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <button id="enviar2" class="btn btnStyle ">
+                    Enviar 
+                    </button>
+                    <div id="modalExplicacion2" class="container display-none ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btnStyle" data-toggle="modal" data-target="#exampleModalCenter2">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter2" tabindex="1000" role="dialog" aria-labelledby="exampleModalCenterTitle2" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle2">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Está basado en los mismos datos estadísticos. ONUSIDA establece que hay aproximadamente 5000 infecciones diariamente; esto es, 1.8 millones de nuevas infecciones cada año. En Argentina se infectan en promedio de 15 personas por día, y 5.500 por año
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button id="siguiente2" class="btn btnStyle display-none ">
+                    Siguiente 
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="pregunta3" class="container display-none">
+            <div class="">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 3</h6>
+                    <h1 class="text-center">¿Cuál es la principal vía de transmisión del VIH en el mundo?</h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio ">
+                        <input checked class="radio" name="Preg3" id="resp1_3" type="radio">
+                        <label id="respuesta-correcta3" class="QuizAnuncio text-center  text-white" for="resp1_3">A - Sexo heterosexual sin protección</label>
+                    </div>
+
+                    <div class=" radio ">
+                        <input class="radio" name="Preg3" id="resp2_3" type="radio">
+                        <label class="QuizAnuncio text-center  text-white" for="resp2_3">B - Sexo entre hombres</label>
+                    </div>
+
+                    <div class=" radio ">
+                        <input class="radio" name="Preg3" id="resp3_3" type="radio">
+                        <label class="QuizAnuncio text-center text-white" for="resp3_3">C - Drogas inyectables</label>
+                    </div>
+                    <div class=" radio mb-3 ">
+                        <input class="radio" name="Preg3" id="resp4_3" type="radio">
+                        <label class="QuizAnuncio text-center text-white" for="resp4_3">D - Transmisión materno-infantil</label>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <button id="enviar3" class="btn btnStyle ">
+                    Enviar 
+                    </button>
+                    <div id="modalExplicacion3" class="container display-none ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btnStyle" data-toggle="modal" data-target="#exampleModalCenter3">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle3" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle3">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Está basado en los mismos datos estadísticos. ONUSIDA establece que hay aproximadamente 5000 infecciones diariamente; esto es, 1.8 millones de nuevas infecciones cada año. <br>En Argentina se infectan en promedio
+                                        de 15 personas por día, y 5.500 por año.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button id="siguiente3" class="btn btnStyle display-none ">
+                    Siguiente 
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="pregunta4" class="container display-none">
+            <div class="">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 4</h6>
+                    <h1 class="text-center">¿Cuál es la principal vía de transmisión del VIH en el mundo?</h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio ">
+                        <input checked class="radio" name="Preg4" id="resp1_4" type="radio">
+                        <label class="QuizAnuncio text-center  text-white" for="resp1_4">A - Virus de insuficiencia de hierro</label>
+                    </div>
+
+                    <div class=" radio ">
+                        <input class="radio" name="Preg4" id="resp2_4" type="radio">
+                        <label id="respuesta-correcta4" class="QuizAnuncio text-center  text-white" for="resp2_4">B - Virus de la inmunodeficiencia humana</label>
+                    </div>
+
+                    <div class=" radio ">
+                        <input class="radio" name="Preg4" id="resp3_4" type="radio">
+                        <label class="QuizAnuncio text-center text-white" for="resp3_4">C - Virus de la inmovilización humana</label>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <button id="enviar4" class="btn btnStyle ">
+                    Enviar 
+                    </button>
+                    <div id="modalExplicacion4" class="container display-none ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btnStyle" data-toggle="modal" data-target="#exampleModalCenter4">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle4" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle4">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        El virus infecta las células del sistema inmunitario humano, destruyendo o paralizando su funcionamiento. Aquellas personas cuyo sistema inmunitario ha sido dañado por el VIH, serán mucho más vulnerables a otras infecciones o cánceres
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button id="siguiente4" class="btn btnStyle display-none ">
+                    Siguiente 
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="pregunta5" class="container display-none">
+            <div class="">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 5</h6>
+                    <h1 class="text-center">¿A qué corresponde la sigla sida?</h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio ">
+                        <input checked class="radio" name="Preg5" id="resp1_5" type="radio">
+                        <label class="QuizAnuncio text-center  text-white" for="resp1_5">A - Síndrome de inmunodeficiencia activa</label>
+                    </div>
+
+                    <div class=" radio ">
+                        <input class="radio" name="Preg5" id="resp2_5" type="radio">
+                        <label id="respuesta-correcta5" class="QuizAnuncio text-center  text-white" for="resp2_5">B - Síndrome de Inmunodeficiencia Adquirida</label>
+                    </div>
+
+                    <div class=" radio ">
+                        <input class="radio" name="Preg5" id="resp3_5" type="radio">
+                        <label class="QuizAnuncio text-center text-white" for="resp3_5">C - Síndrome de inmunoderivación adquirida</label>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <button id="enviar5" class="btn btnStyle ">
+                    Enviar 
+                    </button>
+                    <div id="modalExplicacion5" class="container display-none ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btnStyle" data-toggle="modal" data-target="#exampleModalCenter5">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle5" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle5">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Una persona con el VIH no desarrollará el sida a menos que su sistema inmunitario esté muy dañado. En ese momento, esa persona habrá desarrollado una o más enfermedades especialmente graves, o habrá perdido la mayoría de las células de su sistema inmunitario.<br>                                        Con el paso del tiempo, el VIH debilita al sistema inmunitario de la persona infectada, haciéndola mucho más vulnerable a infecciones oportunistas. Un sistema inmunitario sano puede combatir estas infecciones, pero
+                                        una vez que el VIH ha “derribado” las defensas del cuerpo, estas pueden quedarse establecidas y producir un gran abanico de síntomas, algunos muy graves.
+                                        <br>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button id="siguiente5" class="btn btnStyle display-none ">
+                    Siguiente 
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <div id="Puntuaciones" class="container display-none">
+            <h1>Puntuacion</h1>
+            <div class="container">
+                <div id="Puntuacion1">
+                    <h2>Parte 1</h2>
+                    <div class="QuizAnuncio2 PuntuacionTexto1 cursor-default">
+                    </div>
+                </div>
+                <div id="Puntuacion2" class="display-none">
+                    <h2>Parte 2</h2>
+                    <div class="QuizAnuncio2 PuntuacionTexto2 cursor-default">
+                    </div>
+                </div>
+                <div id="Puntuacion3" class="display-none">
+                    <h2>Parte 3</h2>
+                    <div class="QuizAnuncio2 PuntuacionTexto3 cursor-default">
+                    </div>
+                    <h2>¡¡¡Gracias por realizar el Quiz!!!</h2>
+                </div>
+
+
+            </div>
+            <button id="puntuacionbtn1" class="btn btnStyle ">
+                Siguiente 
+            </button>
+            <button id="puntuacionbtn2" class="btn btnStyle display-none">
+                    Siguiente 
+            </button>
+            <a href="index.html" id="Inicio" class="btn btnStyle display-none">
+                        Inicio 
+            </a>
+        </div>
+
+        <div id="Parte2PregLibre1" class="container display-none">
+            <div class=" mt-4 mb-3">
+                <h6>Pregunta 1</h6>
+                <h1 class="text-center">Enumera al menos 3 tipos de fluidos corporales que pueden transmitir VIH.</h1>
+            </div>
+
+            <div class="container d-flex-column justify-content-center">
+
+                <div id="pregLibre1" class="mb-1 QuizAnuncio2 text-white">
+                    <label for="exampleFormControlTextarea1" class="form-label">Respuesta</label>
+                    <textarea id="text1" class=" QuizAnuncio2 form-control " id="exampleFormControlTextarea1" rows="3" required></textarea>
+                </div>
+
+                <div id="respLibre1" class=" classRespLibre1 mb-1 QuizAnuncio2 text-white display-none">
+                </div>
+
+                <div class="d-flex">
+                    <button id="enviarRespLibre1" disabled class="btn btnStyle ">
+                    Enviar 
+                    </button>
+                    <div id="modalExplicacion6" class="container display-none ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btnStyle" data-toggle="modal" data-target="#exampleModalCenter6">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle6" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle6">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Existen solo cuatro fluidos corporales que pueden contener suficiente VIH para transmitir el virus. Otros fluidos del cuerpo pueden contener una pequeña cantidad del virus, pero no la suficiente para transmitirlo. Deje claro este tema a les participantes,
+                                        puesto que es una fuente de error frecuente y estigma para las personas con VIH
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button id="siguiente6" class="btn btnStyle display-none ">
+                    Siguiente 
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="Parte2PregLibre2" class="display-none container">
+            <div class=" mt-4 mb-3">
+                <h6>Pregunta 2</h6>
+                <h1 class="text-center">Enumera al menos 3 formas de transmisión del VIH.</h1>
+            </div>
+
+            <div class="container d-flex-column justify-content-center">
+
+                <div id="pregLibre2" class="mb-1 QuizAnuncio2 text-white">
+                    <label for="exampleFormControlTextarea1" class="form-label">Respuesta</label>
+                    <textarea id="text2" class=" QuizAnuncio2 form-control " id="exampleFormControlTextarea1" rows="3" required></textarea>
+                </div>
+
+                <div id="respLibre2" class=" classRespLibre2 mb-1 QuizAnuncio2 text-white display-none">
+                </div>
+
+                <div class="d-flex">
+                    <button id="enviarRespLibre2" disabled class="btn btnStyle ">
+                    Enviar 
+                    </button>
+                    <div id="modalExplicacion7" class="container display-none ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btnStyle" data-toggle="modal" data-target="#exampleModalCenter7">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle7" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle7">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Sexo sin protección con una persona con VIH (vaginal, anal u oral, aunque el sexo oral presenta un riesgo menor).<br> Uso de agujas infectadas o sin esterilizar para el consumo de drogas inyectables u otras sustancias.<br>                                        Transmisión materno-infantil durante el embarazo, parto y la lactancia materna. Aclara que la transmisión se da cuando la mujer no recibe tratamiento. Cuando la mujer recibe el tratamiento oportuno el riesgo de
+                                        transmitir el VIH es menos de 2%.<br>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button id="siguiente7" class="btn btnStyle display-none ">
+                    Siguiente 
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="Preguntas" class="container display-none">
+            <div class="pregunta1 mb-4">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 1</h6>
+                    <h1 class="text-center">Si una persona tiene el VIH, siempre desarrollará sida</h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio">
+                        <input checked class="radio" name="1VFPreg1" id="1VFresp1" type="radio">
+                        <label class="QuizAnuncio text-center  text-white" for="1VFresp1">Verdadero</label>
+                    </div>
+
+                    <div class=" radio">
+                        <input class="radio" name="1VFPreg1" id="1VFresp2" type="radio">
+                        <label class="correcto QuizAnuncio text-center  text-white" for="1VFresp2">Falso</label>
+                    </div>
+
+                </div>
+
+                <div class="d-flex">
+                    <div id="VFmodalExplicacion1" class="container  ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="Explicacion btn btnStyle display-none" data-toggle="modal" data-target="#VF1">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="VF1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Es posible vivir con el VIH sin desarrollar sida.<br> Aunque la mayoría de las personas desarrollan sida si no reciben tratamiento para el VIH, algunas personas –una minoría– no se someten a ningún tratamiento,
+                                        y aun así no desarrollan el síndrome. Sin embargo permanecen infectados, esto es, que pueden transmitir el virus a otra persona.<br> Lo ideal es consultar con un/a médico/a para que determine cuándo es necesario
+                                        el tratamiento.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="pregunta2 mb-4">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 2</h6>
+                    <h1 class="text-center">Una persona puede contraer la misma infección de transmisión sexual (ITS) más de una vez</h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio">
+                        <input checked class="radio" name="2VFPreg1" id="2VFresp1" type="radio">
+                        <label class="QuizAnuncio text-center  text-white" for="2VFresp1">Verdadero</label>
+                    </div>
+
+                    <div class=" radio">
+                        <input class="radio" name="2VFPreg1" id="2VFresp2" type="radio">
+                        <label class="correcto QuizAnuncio text-center  text-white" for="2VFresp2">Falso</label>
+                    </div>
+
+                </div>
+
+                <div class="d-flex">
+                    <div id="VFmodalExplicacion1" class="container  ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class=" Explicacion btn btnStyle display-none" data-toggle="modal" data-target="#VF2">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="VF2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Muchas personas sufren casos recurrentes de la misma ITS, como la sífilis o la gonorrea.<br> Para algunas ITS no existe cura, como el herpes, y esa persona permanece infectada y posiblemente será contagiosa para
+                                        siempre.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="pregunta3 mb-4">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 3</h6>
+                    <h1 class="text-center">El VIH puede curarse si se trata en una etapa temprana.</h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio">
+                        <input checked class="radio" name="3VFPreg1" id="3VFresp1" type="radio">
+                        <label class="QuizAnuncio text-center  text-white" for="3VFresp1">Verdadero</label>
+                    </div>
+
+                    <div class=" radio">
+                        <input class="radio" name="3VFPreg1" id="3VFresp2" type="radio">
+                        <label class="correcto QuizAnuncio text-center  text-white" for="3VFresp2">Falso</label>
+                    </div>
+
+                </div>
+
+                <div class="d-flex">
+                    <div id="modalExplicacion" class="container  ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn Explicacion btnStyle display-none" data-toggle="modal" data-target="#VF3">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="VF3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        No existe una cura como tal para el sida o el VIH. Solo existen tratamientos que pueden reducir las infecciones oportunistas, impedir que alguien que ya tiene el virus desarrolle sida, y reducir el riesgo de transmisión si la persona logra tener carga
+                                        viral indetectable. No obstante, una vez infectada, esa persona permanece infectada; y una vez diagnosticado sida, siempre se considera médicamente que lo tiene.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="pregunta4 mb-4">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 4</h6>
+                    <h1 class="text-center">Muchas personas con infecciones de transmisión sexual, incluida el VIH, no muestran síntomas</h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio">
+                        <input checked class="radio" name="4VFPreg1" id="4VFresp1" type="radio">
+                        <label class="correcto QuizAnuncio text-center  text-white" for="4VFresp1">Verdadero</label>
+                    </div>
+
+                    <div class=" radio">
+                        <input class="radio" name="4VFPreg1" id="4VFresp2" type="radio">
+                        <label class="QuizAnuncio text-center  text-white" for="4VFresp2">Falso</label>
+                    </div>
+
+                </div>
+
+                <div class="d-flex">
+                    <div id="modalExplicacion" class="container  ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn Explicacion btnStyle display-none" data-toggle="modal" data-target="#VF4">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="VF4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Una persona con el VIH o con una ITS puede vivir sin presentar ningún síntoma perceptible o notable durante muchos años. Esta es una de las razones por las que es tan importante someterse a pruebas, puesto que cuanto antes se conozca su estado de salud,
+                                        antes podrás recibir un tratamiento médico adecuado. Si no recibe tratamiento para una ITS, la persona puede quedar estéril o sufrir alguna complicación a largo plazo, además del riesgo de contraer VIH u otra ITS
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="pregunta5 mb-4">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 5</h6>
+                    <h1 class="text-center">Estar infectado por una ITS puede aumentar el riesgo de contraer VIH si se mantienen relaciones sexuales sin protección</h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio">
+                        <input checked class="radio" name="5VFPreg1" id="5VFresp1" type="radio">
+                        <label class="correcto QuizAnuncio text-center  text-white" for="5VFresp1">Verdadero</label>
+                    </div>
+
+                    <div class=" radio">
+                        <input class="radio" name="5VFPreg1" id="5VFresp2" type="radio">
+                        <label class="QuizAnuncio text-center  text-white" for="5VFresp2">Falso</label>
+                    </div>
+
+                </div>
+
+                <div class="d-flex">
+                    <div id="modalExplicacion" class="container  ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn Explicacion btnStyle display-none" data-toggle="modal" data-target="#VF5">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="VF5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Las infecciones de transmisión sexual que ocasionan úlceras en los genitales (como el herpes, la sífilis o chancro blando) pueden facilitar el acceso del VIH al torrente circulatorio, cuando hay lesiones abiertas. Asimismo, la infección por una ITS puede
+                                        causar una concentración de células CD4 en la zona genital. Esta concentración establece objetivos adicionales para la infección del VIH
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="pregunta6 mb-4">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 6</h6>
+                    <h1 class="text-center">La circuncisión evita que los hombres contraigan la infección por VIH.</h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio">
+                        <input checked class="radio" name="6VFPreg1" id="6VFresp1" type="radio">
+                        <label class="  QuizAnuncio text-center  text-white" for="6VFresp1">Verdadero</label>
+                    </div>
+
+                    <div class=" radio">
+                        <input class="radio" name="6VFPreg1" id="6VFresp2" type="radio">
+                        <label class="correcto QuizAnuncio text-center  text-white" for="6VFresp2">Falso</label>
+                    </div>
+
+                </div>
+
+                <div class="d-flex">
+                    <div id="modalExplicacion" class="container  ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn Explicacion btnStyle display-none" data-toggle="modal" data-target="#VF6">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="VF6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        El efecto parcialmente protector de la circuncisión masculina es extremadamente constante (una reducción aproximada del 60% en el riesgo de contraer la infección por VIH por vía sexual vaginal con una mujer VIH positiva, en una relación heterosexual).
+                                        Actualmente, se reconoce a la circuncisión masculina, como una valiosa intervención adicional para reducir el riesgo de infección por VIH por vía sexual de la mujer al hombre.<br><br>                                        La circuncisión debería ser considerada siempre como parte de un conjunto integral de medidas preventivas frente al VIH. Las estrategias de comunicación referentes a la circuncisión masculina serán fundamentales,
+                                        para que los hombres no desarrollen una falsa seguridad, y participen en conductas de alto riesgo que pudieran perjudicar la protección parcial que ofrece la circuncisión.<br><br>
+                                        <b>-</b>La circuncisión protege de la transmisión del VIH de la siguiente manera:<br>
+                                        <b>-</b>Las células de la piel bajo el prepucio son especializadas: no son iguales que las del resto del cuerpo, y son más propensas a ser el “blanco” u objetivo del VIH.<br>
+                                        <b>-</b>La extirpación del prepucio provoca normalmente que la piel se vuelva más gruesa, de tal forma que el virus no puede penetrar tan fácilmente en el organismo (durante el acto sexual, los diminutos desgarros
+                                        o roturas de la piel pueden ser puntos de entrada).
+                                        <br><br> Cuando el pene está flácido, el prepucio puede retener secreciones vaginales o sangre frente a las células especializadas, que evitan que se seque el fluido, lo que aumenta las posibilidades de que el virus
+                                        penetre en el cuerpo.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="pregunta7 mb-4">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 7</h6>
+                    <h1 class="text-center">Una persona puede mirar a alguien y saber si está infectado por VIH o si tiene sida. </h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio">
+                        <input checked class="radio" name="7VFPreg1" id="7VFresp1" type="radio">
+                        <label class="  QuizAnuncio text-center  text-white" for="7VFresp1">Verdadero</label>
+                    </div>
+
+                    <div class=" radio">
+                        <input class="radio" name="7VFPreg1" id="7VFresp2" type="radio">
+                        <label class="correcto QuizAnuncio text-center  text-white" for="7VFresp2">Falso</label>
+                    </div>
+
+                </div>
+
+                <div class="d-flex">
+                    <div id="modalExplicacion" class="container  ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn Explicacion btnStyle display-none" data-toggle="modal" data-target="#VF7">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="VF7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Es imposible saber si una persona está infectada solo por su apariencia. Si alguien ha desarrollado sida, podrás saber si una persona no se encuentra bien, pero no de una forma diferente a la de otra persona que está enferma. Así que es imposible saber
+                                        por la apariencia si una persona tiene sida u otra enfermedad.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="pregunta8 mb-4">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 8</h6>
+                    <h1 class="text-center"> Existe una vacuna eficaz que protege de la infección por VIH. </h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio">
+                        <input checked class="radio" name="8VFPreg1" id="8VFresp1" type="radio">
+                        <label class="  QuizAnuncio text-center  text-white" for="8VFresp1">Verdadero</label>
+                    </div>
+
+                    <div class=" radio">
+                        <input class="radio" name="8VFPreg1" id="8VFresp2" type="radio">
+                        <label class="correcto QuizAnuncio text-center  text-white" for="8VFresp2">Falso</label>
+                    </div>
+
+                </div>
+
+                <div class="d-flex">
+                    <div id="modalExplicacion" class="container  ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn Explicacion btnStyle display-none" data-toggle="modal" data-target="#VF8">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="VF8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Actualmente solo existe un Tratamiento Antirretroviral, capaz de mantener el VIH en estado de indetectabilidad, pero todavía se está creando una vacuna eficaz y segura, y pasarán muchos años antes de que esto ocurra
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="pregunta9 mb-4">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 9</h6>
+                    <h1 class="text-center"> Una persona puede estar infectada por el VIH desde hace 10 o más años y no desarrollar el sida. </h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio">
+                        <input checked class="radio" name="9VFPreg1" id="9VFresp1" type="radio">
+                        <label class="correcto QuizAnuncio text-center  text-white" for="9VFresp1">Verdadero</label>
+                    </div>
+
+                    <div class=" radio">
+                        <input class="radio" name="9VFPreg1" id="9VFresp2" type="radio">
+                        <label class="QuizAnuncio text-center  text-white" for="9VFresp2">Falso</label>
+                    </div>
+
+                </div>
+
+                <div class="d-flex">
+                    <div id="modalExplicacion" class="container  ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn Explicacion btnStyle display-none" data-toggle="modal" data-target="#VF9">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="VF9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Se puede tener VIH y no mostrar ningún síntoma, ni desarrollar sida. Así que es muy importante someterse a las pruebas de VIH. No obstante, el tiempo de media que transcurre desde la infección hasta el comienzo del VIH sintomático, varía de 8 a 10 años.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="pregunta10 mb-4">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 10</h6>
+                    <h1 class="text-center"> La realización de perforaciones en las orejas (piercing) y tatuajes con material sin esterilizar es una posible vía de transmisión del VIH. </h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio">
+                        <input checked class="radio" name="10VFPreg1" id="10VFresp1" type="radio">
+                        <label class="correcto QuizAnuncio text-center  text-white" for="10VFresp1">Verdadero</label>
+                    </div>
+
+                    <div class=" radio">
+                        <input class="radio" name="10VFPreg1" id="10VFresp2" type="radio">
+                        <label class="QuizAnuncio text-center  text-white" for="10VFresp2">Falso</label>
+                    </div>
+
+                </div>
+
+                <div class="d-flex">
+                    <div id="modalExplicacion" class="container  ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn Explicacion btnStyle display-none" data-toggle="modal" data-target="#VF10">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="VF10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Es posible la transmisión del VIH a través de un tatuaje o piercing, cuando se utiliza instrumental sin esterilizar. Por tanto, es fundamental garantizar que el negocio al que acudas realice de forma apropiada e higiénica los procedimientos, para así
+                                        prevenir el contagio del VIH y otras enfermedades de transmisión sanguínea
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="pregunta11 mb-4">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 11</h6>
+                    <h1 class="text-center"> Una persona puede contraer VIH por la picadura de un mosquito. </h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio">
+                        <input checked class="radio" name="11VFPreg1" id="11VFresp1" type="radio">
+                        <label class="QuizAnuncio text-center  text-white" for="11VFresp1">Verdadero</label>
+                    </div>
+
+                    <div class=" radio">
+                        <input class="radio" name="11VFPreg1" id="11VFresp2" type="radio">
+                        <label class="correcto QuizAnuncio text-center  text-white" for="11VFresp2">Falso</label>
+                    </div>
+
+                </div>
+
+                <div class="d-flex">
+                    <div id="modalExplicacion" class="container  ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn Explicacion btnStyle display-none" data-toggle="modal" data-target="#VF11">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="VF11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Es imposible que un mosquito sea transmisor de VIH por varias razones:<br><br> Después de alimentarse con la sangre de un ser humano, el mosquito comienza un ciclo digestivo de dos semanas antes de picar a otra
+                                        persona, por tanto, no se dirige seguidamente a otro humano para alimentarse.<br><br> Mientras que la malaria o paludismo, enfermedad producida por un parásito, se reproduce dentro de un mosquito hembra, y se transmite
+                                        a través de la saliva de este, el VIH no puede sobrevivir dentro de un mosquito, y por tanto no se transmite a través de su saliva. Si un mosquito completamente lleno de sangre infectada por el VIH fuera “exprimido”
+                                        en la piel de una persona, no habría suficiente virus para causar una infección.<br><br> Cuando un mosquito “pica” a una persona, inyecta saliva en ella, no su sangre ni la de otra persona. Por tanto, el VIH no
+                                        se encuentra en la saliva del mosquito.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="pregunta12 mb-4">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 12</h6>
+                    <h1 class="text-center"> Una persona puede evitar la infección por el VIH mediante una alimentación saludable y la práctica de ejercicio de forma regular. </h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio">
+                        <input checked class="radio" name="12VFPreg1" id="12VFresp1" type="radio">
+                        <label class=" QuizAnuncio text-center  text-white" for="12VFresp1">Verdadero</label>
+                    </div>
+
+                    <div class=" radio">
+                        <input class="radio" name="12VFPreg1" id="12VFresp2" type="radio">
+                        <label class="correcto QuizAnuncio text-center  text-white" for="12VFresp2">Falso</label>
+                    </div>
+
+                </div>
+
+                <div class="d-flex">
+                    <div id="modalExplicacion" class="container  ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn Explicacion btnStyle display-none" data-toggle="modal" data-target="#VF12">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="VF12" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Aunque tener un buen estado de salud es vital para todes, para así mantener fuerte a nuestro sistema inmunitario lo máximo posible, incluso las personas más sanas pueden transmitirse con el VIH a través de la exposición a sangre, secreciones vaginales,
+                                        semen o leche materna infectadas.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="pregunta13 mb-4">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 13</h6>
+                    <h1 class="text-center"> Una persona VIH indetectable con adherencia al tratamiento y sin otras ITS, no transmite el virus incluso si no usara preservativo. </h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio">
+                        <input checked class="radio" name="13VFPreg1" id="13VFresp1" type="radio">
+                        <label class="correcto QuizAnuncio text-center  text-white" for="13VFresp1">Verdadero</label>
+                    </div>
+
+                    <div class=" radio">
+                        <input class="radio" name="13VFPreg1" id="13VFresp2" type="radio">
+                        <label class="QuizAnuncio text-center  text-white" for="13VFresp2">Falso</label>
+                    </div>
+
+                </div>
+
+                <div class="d-flex">
+                    <div id="modalExplicacion" class="container  ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn Explicacion btnStyle display-none" data-toggle="modal" data-target="#VF13">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="VF13" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Esto es lo que se conoce como I=I, es decir Indetectable=Intrasmisible (en inglés U=U, Undetectable=Untransmittable). Los estudios actuales demuestran que, debido a la alta efectividad del Tratamiento Antiretroviral actual, no solo se ha mejorado la calidad
+                                        de vida de las personas con VIH, sino también se ha reducido la posibilidad de la transmisión por vía sexual.
+                                        <br><br> Es decir, una persona con VIH indetectable, al tener tan poca cantidad de virus en la sangre, tiene muchísimo menos cantidad de virus en el líquido preseminal, el semen o los fluidos vaginales, lo que posibilita
+                                        que si no usara preservativo no se produzca transmisión por vía sexual.
+                                        <br><br> Para muchas personas que viven con el VIH, la noticia de que ya no pueden transmitir el Virus les ha cambiado la vida. Además de poder elegir entre tener relaciones sexuales con o sin preservativo, muchas
+                                        personas con supresión vírica se sienten liberadas del estigma que conlleva vivir con el virus. Saber que ya no pueden transmitir el VIH en sus relaciones sexuales, puede facilitar que muchas personas que viven
+                                        con el VIH se sientan firmemente comprometidas con la prevención a la hora de abordar sus relaciones presentes o futuras.<br><br> Esto no se trata de “dejar de usar preservativo”, sino de quitar los estigmas a la
+                                        hora de que las personas con VIH aborden las posibilidades de tener planificaciones de vida con personas con o sin VIH. La recomendación del uso del preservativo siempre debe existir, ya que es el método que previene
+                                        otras ITS.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="pregunta14 mb-4">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 14</h6>
+                    <h1 class="text-center"> El PreP protege frente al VIH y otras ITS. </h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio">
+                        <input checked class="radio" name="14VFPreg1" id="14VFresp1" type="radio">
+                        <label class="QuizAnuncio text-center  text-white" for="14VFresp1">Verdadero</label>
+                    </div>
+
+                    <div class=" radio">
+                        <input class="radio" name="14VFPreg1" id="14VFresp2" type="radio">
+                        <label class="correcto QuizAnuncio text-center  text-white" for="14VFresp2">Falso</label>
+                    </div>
+
+                </div>
+
+                <div class="d-flex">
+                    <div id="modalExplicacion" class="container  ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn Explicacion btnStyle display-none" data-toggle="modal" data-target="#VF14">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="VF14" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        El PreP, o Profilaxis Pre-Exposición, es el último esfuerzo destinado a ampliar las opciones de prevención combinada del VIH en grupos de población claves.<br><br> Se trata del uso de medicamentos antirretrovirales
+                                        para evitar la transmisión por VIH. La PrEP añade una opción adicional de prevención del VIH al uso de condones y lubricantes, asesoramiento conductual, profilaxis posterior a la exposición, tratamiento de las infecciones
+                                        de transmisión sexual, circuncisión médica masculina voluntaria y terapia antirretroviral para las parejas que viven con el VIH. Los medicamentos de la PrEP utilizados con más frecuencia son una combinación de tenofovir
+                                        (TDF, 300 mg) y emtricitabina (FTC, 200 mg).<br><br> Forma parte de la Estrategia de Prevención Combinada, y solo lo toman las personas que no tienen VIH, pero que tienen prácticas que pueden exponerlos a la transmisión
+                                        del virus. De esta forma, la toma de un medicamento antirretroviral reducen la posibilidad de adquirir VIH.<br> Esta posibilidad no es para todas las personas, sino que requiere de una estrategia de salud pública
+                                        concreta, hacia poblaciones con conductas de riesgo específica.<br><br> La afirmación es Falsa, en tanto el PreP no previene otras ITS, ni evita embarazos.<br><br> El PreP NO ESTÁ DISPONIBLE EN ARGENTINA todavía2.<br><br>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="pregunta15 mb-4">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 15</h6>
+                    <h1 class="text-center"> Las mujeres con VIH, siempre transmitirán VIH el virus a sus bebes si quedan embarazadas </h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio">
+                        <input checked class="radio" name="15VFPreg1" id="15VFresp1" type="radio">
+                        <label class="QuizAnuncio text-center  text-white" for="15VFresp1">Verdadero</label>
+                    </div>
+
+                    <div class=" radio">
+                        <input class="radio" name="15VFPreg1" id="15VFresp2" type="radio">
+                        <label class="correcto QuizAnuncio text-center  text-white" for="15VFresp2">Falso</label>
+                    </div>
+
+                </div>
+
+                <div class="d-flex">
+                    <div id="modalExplicacion" class="container  ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn Explicacion btnStyle display-none" data-toggle="modal" data-target="#VF15">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="VF15" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Existe una gran posibilidad de que una madre con VIH no transmita el virus a sus hijes. Con el correcto cumplimiento de la toma de medicación Antirretroviral, se suprime la carga vírica a un nivel indetectable, lo que reduce enormemente su posterior transmisión
+                                        al/la bebé, al tiempo que restablece el sistema inmunitario de la madre para que goce de una mejor salud.<br><br> A la vez, por lo general no se practica parto natural, sino
+                                        cesárea, y la madre con VIH no da de lactar, mientras el/la bebé, debe tomar medicación ARV durante un período de tiempo para evitar cualquier posibilidad de que aparezca el VIH.<br><br> Todas estas instancias permiten
+                                        que la tasa de transmisión vertical sea cada vez más baja.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="pregunta16 mb-4">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 16</h6>
+                    <h1 class="text-center"> La saliva contiene VIH, por lo tanto es una vía de transmisión. </h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio">
+                        <input checked class="radio" name="16VFPreg1" id="16VFresp1" type="radio">
+                        <label class="QuizAnuncio text-center  text-white" for="16VFresp1">Verdadero</label>
+                    </div>
+
+                    <div class=" radio">
+                        <input class="radio" name="16VFPreg1" id="16VFresp2" type="radio">
+                        <label class="correcto QuizAnuncio text-center  text-white" for="16VFresp2">Falso</label>
+                    </div>
+
+                </div>
+
+                <div class="d-flex">
+                    <div id="modalExplicacion" class="container  ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn Explicacion btnStyle display-none" data-toggle="modal" data-target="#VF16">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="VF16" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Existe confusión con la saliva, puesto que es un fluido utilizado para la prueba del VHI. Recuérde que las pruebas de VIH comprueban los anticuerpos que el cuerpo produce contra el virus, no el virus en sí mismo. Aunque la saliva contiene una cantidad
+                                        extremadamente pequeña del virus, no es en absoluto suficiente para infectar a una persona.<br><br> La transmisión tampoco es acumulativa, así que no existe ningún problema
+                                        en besar a una persona con VIH.<br><br> No existe ningún caso registrado de transmisión del VIH por medio de la saliva.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="pregunta17 mb-4">
+                <div class=" mt-4 mb-3">
+                    <h6>Pregunta 17</h6>
+                    <h1 class="text-center"> Para la atención odontológica a personas con VIH, debe usarse material especial. </h1>
+                </div>
+
+                <div class="container d-flex-column justify-content-center">
+
+                    <div class=" radio">
+                        <input checked class="radio" name="17VFPreg1" id="17VFresp1" type="radio">
+                        <label class="QuizAnuncio text-center  text-white" for="17VFresp1">Verdadero</label>
+                    </div>
+
+                    <div class=" radio">
+                        <input class="radio" name="17VFPreg1" id="17VFresp2" type="radio">
+                        <label class="correcto QuizAnuncio text-center  text-white" for="17VFresp2">Falso</label>
+                    </div>
+
+                </div>
+
+                <div class="d-flex">
+                    <div id="modalExplicacion" class="container  ">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn Explicacion btnStyle display-none" data-toggle="modal" data-target="#VF17">
+                        Explicacion
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="VF17" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Explicación</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        No existe ningún motivo para que se usen medidas especiales para tratar odontologicamente a una persona con VIH. Las medidas de seguridad biomédica deben ser iguales para todes. Es por esto que, preguntar por el estado serológico a una persona, al momento
+                                        de un tratamiento odontológico (así como de cualquier otro) no puede ser invasivo, es decir, puede existir como sugerencia que se realicen un testeo, pero no se pueden exigir pruebas de que una persona no tenga
+                                        el virus, ya que es una grave violación a las Leyes nacionales y tratados internacionales
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btnStyle" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-between">
+                <button id="VFenviar" class="btn btnStyle ">
+                    Enviar 
+                </button>
+                <button id="VFSiguiente1" class="btn btnStyle display-none ">
+                    Siguiente 
+                </button>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+    <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+    <script src="script.js "></script>
+</body>
+
+</html>
