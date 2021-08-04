@@ -125,7 +125,7 @@ enviar3.onclick = function() {
     resp3_3.disabled = true;
     resp4_3.disabled = true;
     respuestaCorrecta3.classList.add("respuesta-correcta");
-    if (resp4_1.checked) {
+    if (resp1_3.checked) {
         contador++;
     }
 }
